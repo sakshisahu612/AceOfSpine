@@ -80,7 +80,7 @@ body {
   width: 100%;
   position: relative;
 
-  background: linear-gradient(to right, #00093c, #2d0b00);
+  background: linear-gradient(to right, #074926, #549d33);
   color: #fff;
   padding: 100px 0 30px;
   font-size: 13px;
@@ -164,6 +164,10 @@ form button {
   border: 0;
   outline: none;
   cursor: pointer;
+  color: #fff;
+}
+.email-input::placeholder {
+  color: white;
 }
 
 form button .fa-solid {
