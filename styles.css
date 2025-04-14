@@ -178,7 +178,9 @@ section{
   display:flex;
   justify-content: center;
   flex-direction: column;
-  background:#55cb8c
+  background:#55cb8c;
+  /* margin-bottom: 10vh; */
+
 }
 .home:before{
   z-index:1;
@@ -187,7 +189,8 @@ section{
   background:rgba(218, 245, 248, 0.685);
   width:100%;
   height:100%;
-  top:12vh;
+  /* margin-bottom: 10vh; */
+  top:10vh;
   left:0;
 }
 .home .content{
@@ -226,7 +229,7 @@ color:#031815;
 .home video{
   z-index: 000;
   position:absolute;
-  top:12vh;
+  top:10vh;
   left:0;
   width:0;
   width:100%;
