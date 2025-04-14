@@ -283,8 +283,8 @@ color:#031815;
   text-align: center;
   border-radius: 10px;
   width: 300px;
-  margin-left: 30px;
-  margin-right: 30px;
+  /* margin-left: 30px;
+  margin-right: 30px; */
 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -309,12 +309,26 @@ color:#031815;
   color: #777;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .steps-wrapper {
     flex-direction: column;
     align-items: center;
   }
+} */
+@media (max-width: 768px) {
+  .steps-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .step-card {
+    margin: 15px 0; /* remove left-right push */
+    width: 90%;      /* adapt to screen size */
+    max-width: 320px; /* keep it clean */
+  }
 }
+
 
 .footer {
   width: 100%;
