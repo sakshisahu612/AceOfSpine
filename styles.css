@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #eef8ff;
+  background: #1f4f59;
 }
 html, body {
   margin: 0;
@@ -498,4 +498,177 @@ hr {
   .col:nth-child(5) {
     flex-basis: 100%;
   }
+}
+
+.testimonial-section {
+  background-color: rgb(255,255,255);
+  width: 100%;
+  
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.heading span {
+  color: #056c43; /* soft purple highlight */
+}
+
+.subheading {
+  color: #555;
+  font-size: 1rem;
+  max-width: 80%;
+  margin: auto;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4vh 0;
+}
+
+.testimonial-card {
+  background: #fff; /* white card */
+  padding: 2rem;
+  width: 70%;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* soft shadow */
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #6b3df8;
+  object-fit: cover;
+}
+
+.stars {
+  color: #ffcc00;
+  font-size: 1.3rem;
+}
+
+.testimonial-text {
+  font-style: italic;
+  text-align: left;
+  margin: 1vh 0;
+  flex: 1 1 100%;
+  color: #333;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+  color: #222;
+}
+
+.nav {
+  background: #e2e2f9;
+  color: #333;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dots {
+  margin-top: 1.5rem;
+}
+
+.dots span {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #ccc;
+  transition: background 0.3s;
+}
+
+.dots .active {
+  background-color: #046b4a;
+}
+
+.review-link {
+  display: block;
+  margin-top: 2rem;
+  color: #168a73;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+.success-stories-section {
+  background-color: #e5ecfd;
+}
+
+.highlight {
+  color: #44ffd5; /* bluish-green for bold part */
+}
+
+.tag {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+}
+
+.tag.before {
+  background-color: #374151; /* gray-700 */
+}
+
+.tag.after {
+  background-color: #a855f7; /* purple-500 */
+}
+
+.content-box {
+  background-color: #111827; /* slightly lighter than background */
+}
+
+.badge {
+  background-color: #4c1d95; /* purple-900 */
+  display: inline-block;
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+}
+
+.story-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #44ffd5;
+}
+
+.nav-btn {
+  background-color: #374151;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+}
+
+.nav-btn:hover {
+  background-color: #4b5563;
+}
+
+.dot {
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: #6b7280; /* gray-500 */
+  border-radius: 9999px;
 }
