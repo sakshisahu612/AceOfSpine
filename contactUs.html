@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ace Of Spine</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
+    <script
+      src="https://kit.fontawesome.com/b94455042f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body class="bg-black text-white">
+
+    <!--NAVBAR-->
+  <nav>
+    <div class="logo">
+        
+        <img src="logo.jpg" class="logo-img" alt="Ace Of Spine Logo">
+    </div>
+    <button type="button" class="btn-hamburger" data-action="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <ul class="nav-menu">
+        <li class="nav-item"><a href="#"><strong>Home</strong></a></li>
+        <li class="nav-item dropdown">
+          <a href="#" data-action="dropdown-toggle"><strong>Treatments</strong></a>
+          <div class="dropdown-menu">
+              <a class="dropdown-item" href="#"><strong>Dry cupping</strong></a>
+              <a class="dropdown-item" href="#"><strong>Chiropractic</strong></a>
+              <a class="dropdown-item" href="#"><strong>Acupuncture</strong></a>
+          </div>
+      </li>
+        <li class="nav-item"><a href="#"><strong>About</strong></a></li>
+        <li class="nav-item"><a href="#"><strong>Contact Us</strong></a></li>
+        <li class="nav-item"><a href="#"><strong>Gallery</strong></a></li>
+        
+    </ul>
+  </nav>
+
+<section class="body-font" style="background-color: white;">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap w-full mb-20">
+      <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+        <h1 class="sm:text-5xl text-5xl font-bold title-font mb-4 text-gray-900">We're here for you</h1>
+        <div class="h-1 w-40" style="background-color: #1f4f59;"></div>
+      </div>
+      <p class="lg:w-1/2 w-full text-xl leading-relaxed text-gray-600">
+        <em>Always humans. Never bots.</em> For pre-consultation questions, <strong>existing customers</strong> who need a hand, or other inquiries, <strong>contact us</strong> and we’ll get back to you in about 28 minutes.
+      </p>
+    </div>
+
+    <div class="flex flex-wrap -m-4">
+      <!-- Box Template for Email Us -->
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="h-full min-h-[300px] p-6 rounded-lg text-white flex flex-col" style="background-color: #1f4f59;">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="Email">
+          <h2 class="text-2xl font-semibold mb-3">Email Us</h2>
+          <p class="flex-grow leading-relaxed mb-3">You can simply send us an email. <strong>Our experts</strong> will get back to you ASAP.</p>
+          <h3 class="text-md tracking-widest"><em>aceofspinephysiotherapy@gmail.com</em></h3>
+        </div>
+      </div>
+
+      <!-- Box Template for Location -->
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="h-full min-h-[300px] p-6 rounded-lg text-white flex flex-col" style="background-color: #1f4f59;">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="Location">
+          <h2 class="text-2xl font-semibold mb-3">Location</h2>
+          <p class="flex-grow leading-relaxed mb-3"><strong>Drive</strong> to our clinic today to quickly and easily schedule an appointment in person.</p>
+          <h3 class="text-md tracking-widest"><em>View on Google Maps</em></h3>
+        </div>
+      </div>
+
+      <!-- Box Template for Call Us -->
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="h-full min-h-[300px] p-6 rounded-lg text-white flex flex-col" style="background-color: #1f4f59;">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="Call Us">
+          <h2 class="text-2xl font-semibold mb-3">Call Us</h2>
+          <p class="flex-grow leading-relaxed mb-3">Got a question you need answered right away? <strong>We're here for that.</strong></p>
+          <h3 class="text-md tracking-widest"><em>077019 02716</em></h3>
+        </div>
+      </div>
+
+      <!-- Box Template for Business Hours -->
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="h-full min-h-[300px] p-6 rounded-lg text-white flex flex-col" style="background-color: #1f4f59;">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="Hours">
+          <h2 class="text-2xl font-semibold mb-3">Business Hours</h2>
+          <div class="flex-grow">
+            <p class="mt-2 leading-relaxed font-medium"><strong>Mon-Sat:</strong> 10:00 am - 02:00 pm</p>
+            <p class="mt-2 leading-relaxed font-medium">04:00 pm - 08:00 pm</p>
+            <p class="mt-2 leading-relaxed font-medium"><strong>Sun:</strong> 10:00 am - 02:00 pm</p>
+            <p class="mt-4 leading-relaxed font-semibold"><em>Booking an appointment is mandatory on Sunday.</em></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Map Section -->
+<section class="map-section my-10">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-2 text-white text-center">
+      Find <span class="text-yellow-400">Us</span>
+    </h2>
+    <h2 class="text-xl font-medium mb-8 text-white text-center">
+      We're conveniently located in Najafgarh, Delhi. Visit us today!
+    </h2>
+
+    <div class="mapouter mt-6">
+      <div class="gmap_canvas">
+        <iframe class="w-full h-96 rounded-lg" id="gmap_canvas"
+          src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=H-17, street-3, jemini park, nangli sakrawati, near metro pillar no. 72, Najafgarh, Delhi, 110043&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- 8. Footer -->
+   <footer class="section footer">
+      <div class="row">
+        <div class="col">
+          <img src="logo.jpg" class="logo" />
+          <p>
+            <b>BEST PHYSIOTHERAPY AND CHIROPRACTIC CENTRE.</b> 
+            <p>We provide best services which includes</p>
+            <p> dry needling, wet/dry cupping, chiropractic</p>
+            <p>adjustments, physiotherapy, rehabilitation.</p>
+          </p>
+        </div>
+
+        <div class="col">
+          <h3>
+            VISIT US
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>H-17, Street - 3</p>
+          <p>Jemini Park, Nangli Sakrawati</p>
+          <p>Najafgarh, Delhi</p>
+          <p>India - 110043</p>
+          <p class="email-id">aceofspinephysiotherapy@gmail.com</p>
+          <h4>077019 02716</h4>
+        </div>
+
+        <div class="col">
+          <h3>
+            Working Hours
+            <div class="underline"><span></span></div>
+          </h3>
+          <p><b>Monday - Saturday</b></p>
+          <p>10:00 am - 02:00 pm</p>
+          <p>04:00 pm - 08:00 pm</p>
+          <br>
+
+          <p><b>Sunday</b></p>
+          <p>10:00 am - 02:00 pm</p>
+          <p><b><i>Booking appointment is mandatory!</i></b></p>
+        </div>
+
+        <div class="col">
+          <h3>
+            Quick Links
+            <div class="underline"><span></span></div>
+          </h3>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Treatments</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>
+            Newsletter
+            <div class="underline"><span></span></div>
+          </h3>
+          <form>
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" placeholder=" Enter your email-id." class = "email-input" required />
+            <button><i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+          <div class="social-icons">
+            <a href = "https://www.facebook.com/aceofspine/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href = "https://www.instagram.com/ace_of_spine/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href = "https://www.youtube.com/@aceofspine" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">Copyright © 2025 Ace Of Spine</p>
+    </footer>
+
+  </body>
+</html>
