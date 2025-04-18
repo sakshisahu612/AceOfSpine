@@ -260,7 +260,7 @@ section {
   font-size: 1.1rem;
   color: #555;
   margin-bottom: 40px;
-  max-width: 900px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -291,6 +291,9 @@ section {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
+  display: block;
+  margin: 0 auto 20px auto;
+  background: #f5f0f0;
 }
 
 .step-title {
@@ -495,6 +498,7 @@ hr {
   }
 }
 
+/* TESTIMONIAL */
 .testimonial-section {
   background-color: rgb(255, 255, 255);
   width: 100%;
@@ -526,7 +530,7 @@ hr {
 }
 
 .testimonial-card {
-  background: #fff; /* white card */
+  background: #1f4f59; /* white card */
   padding: 2rem;
   width: 80%;
   border-radius: 0.75rem;
@@ -542,7 +546,7 @@ hr {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 3px solid #6b3df8;
+  border: 3px solid #c2ffde;
   object-fit: cover;
 }
 
@@ -556,14 +560,14 @@ hr {
   text-align: left;
   margin: 1vh 0;
   flex: 1 1 100%;
-  color: #333;
+  color: #ffffff;
 }
 
 .testimonial-name {
   font-weight: bold;
   text-align: left;
   width: 100%;
-  color: #222;
+  color: #e7fef6;
 }
 
 .nav {
