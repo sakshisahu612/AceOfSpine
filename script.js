@@ -148,3 +148,37 @@ setInterval(nextTestimonial, 3000);
   // Init
   showSuccessStory(currentIndex);
 
+// //FAQS
+// const items = document.querySelectorAll(".accordion button");
+
+// function toggleAccordion() {
+//   const itemToggle = this.getAttribute('aria-expanded');
+  
+//   for (i = 0; i < items.length; i++) {
+//     items[i].setAttribute('aria-expanded', 'false');
+//   }
+  
+//   if (itemToggle == 'false') {
+//     this.setAttribute('aria-expanded', 'true');
+//   }
+// }
+
+// items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".accordion button");
+
+  function toggleAccordion() {
+    const itemToggle = this.getAttribute("aria-expanded");
+
+    // Close all accordion items
+    items.forEach((item) => item.setAttribute("aria-expanded", "false"));
+
+    // Expand clicked item if it was closed
+    if (itemToggle === "false") {
+      this.setAttribute("aria-expanded", "true");
+    }
+  }
+
+  items.forEach((item) => item.addEventListener("click", toggleAccordion));
+});
