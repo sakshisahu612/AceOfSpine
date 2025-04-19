@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -79,12 +81,21 @@ nav .dropdown-menu {
   left: 0;
   right: 0;
   top: 100%;
+  width:200px;
   padding: 0.5em 0;
   margin-top: -0.5em;
   border: 1px solid rgba(18, 105, 97, 0.3);
   border-radius: 0.5em;
   background-color: #fff;
 }
+/* .dropdown:hover .dropdown-menu {
+  display: block;
+}
+@media (min-width: 768px) {
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+} */
 nav .dropdown.show .dropdown-menu {
   display: block;
 }
@@ -194,7 +205,6 @@ section {
   background: linear-gradient(to right,#1f4f59, #599daa);
   opacity: 0.68;
   width: 100%;
-  
   height: 100%;
   /* margin-bottom: 10vh; */
   top: 10vh;
@@ -219,8 +229,7 @@ section {
 }
 .home .content p {
   margin-bottom: 65px;
-  color: #f8f9f9;
-  
+  color: #f8f9f9;  
   font-style: italic;
   font-size: 18px;
   font-weight: 1200;
@@ -249,6 +258,26 @@ section {
     padding: 100px 20px;
   }
 }
+@keyframes scroll {
+  0%, 20% { transform: translateX(0); }
+  25%, 45% { transform: translateX(-100%); }
+  50%, 70% { transform: translateX(-200%); }
+  75%, 95% { transform: translateX(-300%); }
+  100% { transform: translateX(0); }
+}
+.carousel-track {
+  animation: scroll 40s infinite ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
 /* STEP  BOX */
 .steps-section {
   text-align: center;
@@ -333,28 +362,29 @@ section {
     max-width: 320px; /* keep it clean */
   }
 }
+
+/* treatment */
+#slider-container::-webkit-scrollbar {
+  display: none;
+}
+#slider-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 /* FAQ */
 
-/* :root {
-	--bg-dark: #0f111a;
-	--text-light: #ffffff;
-	--accent: #a064f5;
-	--divider: #333;
-  } */
-  
-  /* body {
-	font-family: 'Segoe UI', sans-serif;
-	background: var(--bg-dark);
-	color: var(--text-light);
-	padding: 2rem;
-  } */
+
   
   .faq-section {
     /* background: #0f111a; */
+    padding-top: 0;
     color: #ffffff;
 	max-width: 1000px;
+  height:650px;
 	margin: auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
   
+
   }
   
   .faq-title {

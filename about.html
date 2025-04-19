@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body class="bg-[#003b3b] text-white">
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="logo.jpg" class="logo-img" alt="Ace Of Spine Logo"></a>
+            <!-- <img src="logo.jpg" class="logo-img" alt="Ace Of Spine Logo"> -->
+        </div>
+        <button type="button" class="btn-hamburger" data-action="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html"><strong>Home</strong></a></li>
+            <li class="nav-item dropdown">                                                                                                                                                                                                                                                                                                                                                                                                                           
+              <a href="#" data-action="dropdown-toggle"><strong>Conditions</strong></a>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#"><strong>Neck Pain</strong></a>
+                  <a class="dropdown-item" href="#"><strong>Shoulder Pain</strong></a>
+                  <a class="dropdown-item" href="#"><strong>Knee Pain</strong></a>
+                  <a class="dropdown-item" href="#"><strong>Sciatica, Slip Disc</strong></a>
+                  <a class="dropdown-item" href="#"><strong>Spine Specialized</strong></a>
+                  <a class="dropdown-item" href="#"><strong>Ligament Injuries</strong></a>
+                  <a class="dropdown-item" href="#"><strong>Tennis Elbow</strong></a>
+                  <a class="dropdown-item" href="#"><strong>Chiropractic Adjustments</strong></a>
+                  <a class="dropdown-item" href="#"><strong>Stroke Rehabilitation</strong></a>
+    
+              </div>
+          </li>
+            <li class="nav-item"><a href="about.html"><strong>About</strong></a></li>
+            <li class="nav-item"><a href="contactUs.html"><strong>Contact Us</strong></a></li>
+            <li class="nav-item"><a href="#"><strong>Gallery</strong></a></li>
+            
+        </ul>
+      </nav>
+
+<!--about us-->
+  <section class="bg-[#003b3b] pt-22 px-4" >
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-white">About us</h2>
+      <p class="text-base sm:text-lg leading-relaxed text-white">
+        We are physiotherapy clinic based in Najafgarh, Delhi.
+        <br />
+        At our physiotherapy clinic, we are dedicated to providing exceptional care and support to individuals on their journey to recovery and wellness.
+      </p>
+    </div>
+  </section>
+  
+<!--dr, info-->
+  <section class="bg-[#ffff] text-black py-16 px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      
+      <!-- Image Half -->
+      <div class="flex justify-center">
+        <img src="Shruti.jpeg" alt="Dr. Shruti Raj" class="rounded-lg shadow-lg w-full max-w-md object-cover">
+      </div>
+  
+      <!-- Text Half -->
+      <div class="text-black">
+        <p class="uppercase tracking-widest text-sm text-black mb-2">Meet the Founder & CEO</p>
+        <h2 class="text-4xl font-bold mb-4">Hey, I'm Dr. Shruti Raj!</h2>
+        <p class="text-lg mb-4">
+          With over 4 years of experience in physiotherapy, I founded Ace of Spine 2.5 years ago to provide holistic, non-surgical solutions for chronic pain, posture correction, and spinal health.
+        </p>
+        <p class="text-lg mb-6">
+          My goal is to provide lasting relief through personalized treatment, compassionate care, and proven techniques.
+        </p>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2">
+            <span class="text-black text-xl">✔</span>
+            <span> Trusted by thousands of patients for spine and joint care. </span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-black text-xl">✔</span>
+            <span>
+               Specialized in posture correction and chronic pain management.
+            </span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-black text-xl">✔</span>
+            <span>
+               Praised for detailed consultations and lasting results.
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--team-->
+  <section class="bg-[#f6f4f4] py-12 px-4">
+    <!-- Block 1 -->
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center mb-16">
+      <!-- <img src="Dr.jpg" alt="Experienced Staff" class="rounded-xl shadow-md w-2/4 h-auto" /> -->
+      <img src="Dr.jpg" alt="Experienced Staff" class="rounded-xl shadow-md w-2/4 mx-auto h-auto" />
+      <div>
+        <h3 class="text-xl font-bold text-[#003b3b] mb-2">Experienced and Caring Staff</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          Our clinic’s staff of skilled and caring physical therapists offers professional direction and
+          assistance during the rehabilitation process, fostering a relaxing and successful healing experience.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Block 2  -->
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+      <div class="md:order-2">
+        <img src="Dr.jpg" alt="State-of-the-Art Facilities" class=" rounded-xl shadow-md w-2/4 mx-auto h-auto" />
+      </div>
+      <div class="md:order-1">
+        <h3 class="text-xl font-bold text-[#003b3b] mb-2">State-of-the-Art Facilities</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          Equipped with state-of-the-art facilities and advanced therapeutic equipment, our clinic offers
+          cutting-edge rehabilitation services aimed at optimizing mobility, reducing pain, and enhancing
+          quality of life for our patients.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- 8. Footer -->
+  <footer class="section footer">
+    <div class="row">
+      <div class="col">
+        <img src="logo.jpg" class="logo" />
+        <p>
+          <b>BEST PHYSIOTHERAPY AND CHIROPRACTIC CENTRE.</b> 
+          <p>We provide best services which includes</p>
+          <p> dry needling, wet/dry cupping, chiropractic</p>
+          <p>adjustments, physiotherapy, rehabilitation.</p>
+        </p>
+      </div>
+
+      <div class="col">
+        <h3>
+          VISIT US
+          <div class="underline"><span></span></div>
+        </h3>
+        <p>H-17, Street - 3</p>
+        <p>Jemini Park, Nangli Sakrawati</p>
+        <p>Najafgarh, Delhi</p>
+        <p>India - 110043</p>
+        <p class="email-id">aceofspinephysiotherapy@gmail.com</p>
+        <h4>077019 02716</h4>
+      </div>
+
+      <div class="col">
+        <h3>
+          Working Hours
+          <div class="underline"><span></span></div>
+        </h3>
+        <p><b>Monday - Saturday</b></p>
+        <p>10:00 am - 02:00 pm</p>
+        <p>04:00 pm - 08:00 pm</p>
+        <br>
+
+        <p><b>Sunday</b></p>
+        <p>10:00 am - 02:00 pm</p>
+        <p><b><i>Booking appointment is mandatory!</i></b></p>
+      </div>
+
+      <div class="col">
+        <h3>
+          Quick Links
+          <div class="underline"><span></span></div>
+        </h3>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Treatments</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Gallery</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>
+          Newsletter
+          <div class="underline"><span></span></div>
+        </h3>
+        <form>
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder=" Enter your email-id." class = "email-input" required />
+          <button><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <div class="social-icons">
+          <a href = "https://www.facebook.com/aceofspine/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href = "https://www.instagram.com/ace_of_spine/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href = "https://www.youtube.com/@aceofspine" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <p class="copyright">Copyright © 2025 Ace Of Spine</p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
+
