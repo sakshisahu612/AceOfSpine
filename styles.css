@@ -565,6 +565,7 @@ section {
   display: flex;
   gap: 1rem;
   flex-direction: column;
+  /* color: #0b0000; */
 }
 
 /* .input-field {
@@ -577,6 +578,7 @@ section {
   padding: 0.75rem;
   border-radius: 6px;
   box-sizing: border-box;
+  /* color: #0b0000; */
 }
 
 /* .input-grid {
