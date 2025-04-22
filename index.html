@@ -47,6 +47,7 @@
 
           </div>
       </li>
+      
         <li class="nav-item"><a href="about.html"><strong>About</strong></a></li>
         <li class="nav-item"><a href="contactUs.html"><strong>Contact Us</strong></a></li>
         <li class="nav-item"><a href="#"><strong>Gallery</strong></a></li>
@@ -201,19 +202,22 @@
 
     <a href="https://www.google.com/search?sca_esv=8e4b17182cda0818&rlz=1C1UEAD_enIN1109IN1109&sxsrf=AHTn8zoGOrZ2Z-b_DQzBfQqAOKq4G9_SUw:1744829982849&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzbW7QidAdVk5xNNHCcY3x3pmleutON11ERw4Y3UvZbTe5ORhQGN1ENf5WTYDM6FCLr_CFFLXwNNOVXFZ8EYuT1htNtXc&q=ACE+OF+SPINE+Reviews&sa=X&ved=2ahUKEwjr0siant2MAxVJSWwGHXf2BMIQ0bkNegQIMhAD&biw=1536&bih=695&dpr=1.25" class="review-link"><b>See all reviews on Google →</b></a>
   </section>
-<!--BOOK YOUR APPOINTMENT-->
+<!--BOOK YOUR APPOINTMENT--> 
+<!--final book-->
+<section id="appointment" class="bg-gray-900 text-white py-16">
+  <div class="apcontainer">
+    <div class="form-heading">
+      <h2 class="text-3xl font-bold">Book Your <span class="text-#1F2937">Appointment</span></h2>
+      <p class="text-sm text-gray-400 mt-2">Take the first step towards a pain-free life.</p>
+    </div>
+    
+       <!-- <div class="grid grid-cols-1 md:grid-cols-2 bg-gray-800 rounded-2xl overflow-hidden shadow-lg"> -->
+      <div class="grid grid-cols-1 md:grid-cols-2 bg-gray-800 rounded-2xl overflow-hidden shadow-lg">
 
-
-
-<!--<section id="appointment" class="bg-gray-900 text-white py-16">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 md:grid-cols-3 bg-gray-800 rounded-2xl overflow-hidden shadow-lg">
-      
-      
-      <div class="bg-purple-600 p-8 text-white space-y-6">
+      <div class="contact-info">
         <h2 class="text-3xl font-bold">Contact Information</h2>
         <p class="text-sm">Fill in the form or contact us directly and we'll get back to you promptly.</p>
-        <div class="space-y-3 text-sm">
+        <div class="contact-details text-sm">
           <div><strong>📞 Phone:</strong><br>+91 7701902716</div>
           <div><strong>📧 Email:</strong><br>aceofspinephysiotherapy@gmail.com</div>
           <div><strong>📍 Address:</strong><br>H-17, Street - 3, Jemini Park,<br>Nangli Sakrawati, Najafgarh, Delhi - 110043</div>
@@ -221,31 +225,39 @@
         </div>
       </div>
 
-      
-      <div class="md:col-span-2 p-8 bg-gray-900">
-        <form id="appointmentForm" class="space-y-6">
+      <div class="appointment-form-container">
+        <form id="appointmentForm" class="appointment-form">
           <div class="text-center">
-            <h2 class="text-3xl font-bold">Book Your <span class="text-purple-500">Appointment</span></h2>
-            <p class="text-sm text-gray-400 mt-2">Take the first step towards a pain-free life.</p>
+            <!-- <h2 class="text-3xl font-bold">Book Your <span class="text-purple-500">Appointment</span></h2>
+            <p class="text-sm text-gray-400 mt-2">Take the first step towards a pain-free life.</p> -->
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <input type="text" id="fullName" placeholder="Full Name" class="p-3 bg-gray-700 rounded w-full text-white" required>
-            <input type="tel" id="phoneNumber" placeholder="Phone Number" class="p-3 bg-gray-700 rounded w-full text-white" required>
-            <input type="email" id="emailAddress" placeholder="Email Address" class="p-3 bg-gray-700 rounded w-full text-white" required>
-            <select id="treatmentType" class="p-3 bg-gray-700 rounded w-full text-white" required>
+
+          <div class="input-grid">
+            <div class="input-row">
+              <input type="text" id="fullName" placeholder="Full Name" class="input-field" required>
+              <input type="tel" id="phoneNumber" placeholder="Phone Number" class="input-field" required>
+            </div>
+          
+            <input type="email" id="emailAddress" placeholder="Email Address" class="input-field" required>
+          
+            <select id="treatmentType" class="input-field" required>
               <option value="">Select Treatment</option>
               <option value="Physiotherapy">Physiotherapy</option>
               <option value="Chiropractic">Chiropractic</option>
               <option value="Rehabilitation">Rehabilitation</option>
             </select>
-            <input type="date" id="preferredDate" class="p-3 bg-gray-700 rounded w-full text-white" required>
-            <input type="time" id="preferredTime" class="p-3 bg-gray-700 rounded w-full text-white" required>
+          
+            <div class="input-row">
+              <input type="date" id="preferredDate" class="input-field" required>
+              <input type="time" id="preferredTime" class="input-field" required>
+            </div>
           </div>
+          
 
-          <textarea id="additionalInfo" rows="4" placeholder="Additional Information" class="w-full p-3 bg-gray-700 rounded text-white"></textarea>
+          <textarea id="additionalInfo" rows="4" placeholder="Additional Information" class="textarea-field"></textarea>
 
-          <button type="submit" class="bg-purple-600 hover:bg-purple-700 w-full py-3 rounded text-white text-lg font-semibold">
+          <button type="submit" class="submit-button">
             Book Your Appointment
           </button>
         </form>
@@ -253,34 +265,30 @@
     </div>
   </div>
 
-  
-  <script>
-    document.getElementById('appointmentForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      const name = document.getElementById('fullName').value;
-      const phone = document.getElementById('phoneNumber').value;
-      const email = document.getElementById('emailAddress').value;
-      const treatment = document.getElementById('treatmentType').value;
-      const date = document.getElementById('preferredDate').value;
-      const time = document.getElementById('preferredTime').value;
-      const notes = document.getElementById('additionalInfo').value;
-
-      const message = `New Appointment Request:\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nTreatment: ${treatment}\nDate: ${date}\nTime: ${time}\nNotes: ${notes}`;
-      const whatsappNumber = "917701902716";
-      const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-
-      window.open(url, '_blank');
-    });
-  </script>
 </section>
+<script>
+  document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+  e.preventDefault();
 
--->
+  const name = document.getElementById('fullName').value;
+  const phone = document.getElementById('phoneNumber').value;
+  const email = document.getElementById('emailAddress').value;
+  const treatment = document.getElementById('treatmentType').value;
+  const date = document.getElementById('preferredDate').value;
+  const time = document.getElementById('preferredTime').value;
+  const notes = document.getElementById('additionalInfo').value;
 
+  const message = `New Appointment Request:\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nTreatment: ${treatment}\nDate: ${date}\nTime: ${time}\nNotes: ${notes}`;
+  const whatsappNumber = "917011988084";
+  const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+  window.open(url, '_blank');
+});
+</script>
 <!--TREATMENTS-->
 
 
-<!-- <section class="py-16 bg-white text-black">
+<!--<section class="py-16 bg-white text-black">
   <div class="max-w-7xl mx-auto px-4">
     <h2 class="text-4xl font-bold text-center mb-8">
       Health <span class="text-purple-400">Insights</span>
@@ -441,84 +449,6 @@
 
 
 
-<!--FAQS-->
-<section class="faq-section">
-  <div class="faq-title">
-    <h2><span>Frequently Asked</span> <span class="highlight">Questions</span></h2>
-    <p>Find answers to common questions about our services, appointments, and treatments.</p>
-  </div>
-
-  <div class="faq-container">
-    <div class="faq-item active">
-      <div class="faq-question">
-        What conditions do you treat?
-        <span class="arrow">&#9650;</span>
-      </div>
-      <div class="faq-answer">
-        We treat a wide range of conditions including back pain, neck pain, sports injuries, arthritis, sciatica, headaches, postural problems, and more. Our therapists are experienced in various treatment methods to address your specific needs.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        How long does a typical session last?
-        <span class="arrow">&#9660;</span>
-      </div>
-      <div class="faq-answer">
-        Sessions usually last between 30 to 60 minutes depending on your treatment plan and therapist’s recommendations.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        Do I need a referral from a doctor?
-        <span class="arrow">&#9660;</span>
-      </div>
-      <div class="faq-answer">
-        In most cases, a referral is not necessary, but it may depend on your insurance provider. Contact us for more details.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        What should I wear to my appointment?
-        <span class="arrow">&#9660;</span>
-      </div>
-      <div class="faq-answer">
-        
-          We recommend wearing comfortable, loose-fitting clothing that allows easy access to the area requiring treatment. For lower body treatments, shorts are ideal, and for upper body treatments, a tank top or loose t-shirt works well.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        How many sessions will I need?
-        <span class="arrow">&#9660;</span>
-      </div>
-      <div class="faq-answer">
-        
-        The number of sessions varies depending on your condition, its severity, and how your body responds to treatment. After your initial assessment, your therapist will provide a treatment plan with an estimated number of sessions required.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        
-        Do you accept insurance?
-
-        <span class="arrow">&#9660;</span>
-      </div>
-      <div class="faq-answer">
-       
-Yes, we accept most major insurance plans. We recommend contacting your insurance provider before your appointment to verify coverage for physiotherapy services. We can also provide you with receipts for reimbursement.
-      </div>
-    </div>
-
-    
-    
-  </div>
-</section>
-  
 
 
 <!--Google maps-->

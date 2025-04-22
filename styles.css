@@ -378,9 +378,10 @@ section {
   .faq-section {
     /* background: #0f111a; */
     padding-top: 0;
+    
     color: #ffffff;
 	max-width: 1000px;
-  height:650px;
+  height:700px;
 	margin: auto;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
   
@@ -456,8 +457,174 @@ section {
 	transform: rotate(180deg);
   }
   
-  
+/* book */
+/* body {
+  font-family: Arial, sans-serif;
+} */
 
+/* .apcontainer {
+
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+ 
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 5%;
+  width: 100%;
+  
+} */
+.form-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: -1rem; /* Optional: pull it higher */
+}
+
+/* .apcontainer {
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 2%;
+
+} */
+.apcontainer {
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+  max-width: 1280px;
+  box-sizing: border-box;
+  padding-right: 12%; 
+  padding-left: 12%;
+}
+
+
+#appointment {
+  /* background-color: #1f4f59; */
+  background-color: #fff;
+  color: #0f8389;
+   padding: 10px 0; 
+   width: 100%;
+}
+
+.contact-info {
+  background-color: #1f4f59;
+  padding: 10px;
+  color: #f5f0f0;
+  
+  /* space-y: 24px; */
+}
+/* .apcontainer > * + * {
+  margin-top: 24px; /* or 96px for Tailwind's space-y-24 equivalent 
+} */
+
+
+.contact-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contact-details {
+  font-size: 20px;
+  /* line-height: 50px;
+  line-height: 50px; */
+  line-height: 2.5; /* or use px like 60px */
+}
+
+.appointment-form-container {
+  background-color: #1F2937;
+  
+   padding-left: 3px;  
+   padding-right: 20px;  
+  padding: 2%;
+  /* padding-top: 50px; */
+}
+
+.appointment-form {
+ 
+  width: 100%;
+  display: grid;
+  gap: 10px;
+}
+
+.text-center h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.input-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+}
+
+.input-row {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+/* .input-field {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+} */
+.input-field {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* .input-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-field {
+  padding: 12px;
+  background-color: #374151;
+  border-radius: 8px;
+  width: 100%;
+  color: #fff;
+} */
+
+.textarea-field {
+  padding: 12px;
+  background-color: #374151;
+  border-radius: 8px;
+  width: 100%;
+  color: #fff;
+}
+
+.submit-button {
+  background-color: #1f4f59;
+  color: white;
+  padding: 16px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.submit-button:hover {
+  background-color: #fff;
+  color:#1f4f59;
+}
+/* @media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 2fr;
+  }
+
+} */
+@media (min-width: 600px) {
+  .input-row {
+    flex-direction: row;
+  }
+}
 
 .footer {
   width: 100%;

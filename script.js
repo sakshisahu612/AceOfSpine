@@ -169,4 +169,22 @@ document.addEventListener("DOMContentLoaded", function () {
   items.forEach((item) => item.addEventListener("click", toggleAccordion));
 });
 
-//treatments
+//book
+document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('fullName').value;
+  const phone = document.getElementById('phoneNumber').value;
+  const email = document.getElementById('emailAddress').value;
+  const treatment = document.getElementById('treatmentType').value;
+  const date = document.getElementById('preferredDate').value;
+  const time = document.getElementById('preferredTime').value;
+  const notes = document.getElementById('additionalInfo').value;
+
+  const message = `New Appointment Request:\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nTreatment: ${treatment}\nDate: ${date}\nTime: ${time}\nNotes: ${notes}`;
+  const whatsappNumber = "917011988084";
+  const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+  window.open(url, '_blank');
+});
+
